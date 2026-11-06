@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="theme-color" content="#0B1226">
+
+<title>Éclat d’Afrique Pressing | Bafoussam</title>
+
+<meta name="description" content="Éclat d'Afrique Pressing à Bafoussam : pressing, entretien du linge et nettoyage de canapés et matelas à domicile.">
+
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icon.svg">
+
+<style>
+:root {
+  --blue:#1E3A8A;
+  --dark:#0B1226;
+  --gold:#FFD34D;
+  --white:#FFFFFF;
+  --bg:#F4F6FB;
+  --text:#182033;
+  --muted:#68738A;
+  --card:#FFFFFF;
+  --border:#E5E9F2;
+  --green:#159B61;
+}
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  padding-bottom:85px;
+}
+
+button,input,select,textarea {
+  font:inherit;
+}
+
+button {
+  cursor:pointer;
+  border:0;
+}
+
+header {
+  background:var(--dark);
+  color:white;
+  padding:17px 16px;
+  position:sticky;
+  top:0;
+  z-index:20;
+  box-shadow:0 4px 15px #0002;
+}
+
+.header-inner {
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.brand img {
+  width:43px;
+  height:43px;
+}
+
+.brand strong {
+  display:block;
+  font-size:16px;
+  color:var(--gold);
+}
+
+.brand small {
+  font-size:11px;
+  color:#D5D9E5;
+}
+
+.header-actions {
+  display:flex;
+  gap:8px;
+}
+
+.icon-btn {
+  background:#ffffff18;
+  color:white;
+  padding:10px;
+  border-radius:10px;
+}
+
+.install-btn {
+  display:none;
+  background:var(--gold);
+  color:var(--dark);
+  padding:10px 12px;
+  border-radius:10px;
+  font-weight:bold;
+  font-size:12px;
+}
+
+main {
+  max-width:1100px;
+  margin:auto;
+  padding:18px;
+}
+
+.hero {
+  background:linear-gradient(135deg,#0B1226,#1E3A8A);
+  color:white;
+  border-radius:22px;
+  padding:35px 22px;
+  overflow:hidden;
+  position:relative;
+}
+
+.hero::after {
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  border:25px solid #FFD34D22;
+  border-radius:50%;
+  right:-50px;
+  top:-50px;
+}
+
+.hero-content {
+  position:relative;
+  z-index:1;
+  max-width:600px;
+}
+
+.badge {
+  display:inline-block;
+  color:var(--gold);
+  border:1px solid #FFD34D88;
+  padding:7px 11px;
+  border-radius:30px;
+  font-size:11px;
+  margin-bottom:17px;
+  letter-spacing:1px;
+}
+
+.hero h1 {
+  font-size:clamp(29px,6vw,48px);
+  line-height:1.12;
+  margin-bottom:15px;
+}
+
+.hero h1 span {
+  color:var(--gold);
+}
+
+.hero p {
+  color:#DCE3F5;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:22px;
+}
+
+.btn {
+  display:inline-block;
+  padding:13px 17px;
+  border-radius:11px;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:center;
+}
+
+.btn-gold {
+  background:var(--gold);
+  color:var(--dark);
+}
+
+.btn-blue {
+  background:var(--blue);
+  color:white;
+}
+
+.btn-outline {
+  border:1px solid var(--border);
+  background:white;
+  color:var(--blue);
+}
+
+.section {
+  margin-top:30px;
+}
+
+.section-heading {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  margin-bottom:16px;
+}
+
+.section-heading h2 {
+  font-size:21px;
+}
+
+.section-heading p {
+  color:var(--muted);
+  font-size:12px;
+  margin-top:4px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+
+.card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:17px;
+  padding:15px;
+  box-shadow:0 5px 18px #17264b08;
+}
+
+.service-icon {
+  font-size:32px;
+  margin-bottom:12px;
+}
+
+.card h3 {
+  font-size:15px;
+  margin-bottom:7px;
+}
+
+.card p {
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.5;
+  min-height:36px;
+}
+
+.price {
+  color:var(--blue);
+  font-weight:bold;
+  font-size:15px;
+  margin:12px 0;
+}
+
+.card button {
+  width:100%;
+  background:var(--blue);
+  color:white;
+  padding:11px;
+  border-radius:9px;
+  font-weight:bold;
+  font-size:12px;
+}
+
+.info-banner {
+  margin-top:25px;
+  background:#FFF7D9;
+  border:1px solid #F4DE91;
+  padding:18px;
+  border-radius:15px;
+}
+
+.info-banner h3 {
+  margin-bottom:7px;
+  color:#735400;
+}
+
+.info-banner p {
+  font-size:13px;
+  line-height:1.6;
+  color:#6C5B2B;
+}
+
+.panel {
+  background:white;
+  border-radius:17px;
+  padding:18px;
+  border:1px solid var(--border);
+}
+
+.field {
+  margin-bottom:13px;
+}
+
+.field label {
+  display:block;
+  font-size:12px;
+  font-weight:bold;
+  margin-bottom:7px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width:100%;
+  padding:13px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:#FAFBFE;
+  outline:none;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color:var(--blue);
+}
+
+.field textarea {
+  min-height:85px;
+  resize:vertical;
+}
+
+.full {
+  width:100%;
+}
+
+.cart-list {
+  margin:12px 0;
+}
+
+.cart-item {
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  padding:12px 0;
+  border-bottom:1px solid var(--border);
+  font-size:13px;
+}
+
+.cart-item button {
+  background:#FDECEC;
+  color:#B42318;
+  border-radius:7px;
+  padding:5px 9px;
+}
+
+.total {
+  display:flex;
+  justify-content:space-between;
+  font-weight:bold;
+  font-size:18px;
+  margin:17px 0;
+}
+
+.admin-box {
+  display:none;
+}
+
+.order-row {
+  background:#F7F8FC;
+  border:1px solid var(--border);
+  padding:12px;
+  border-radius:10px;
+  margin:9px 0;
+  font-size:12px;
+  line-height:1.6;
+}
+
+.order-row strong {
+  color:var(--blue);
+}
+
+footer {
+  background:var(--dark);
+  color:white;
+  padding:28px 18px;
+  margin-top:35px;
+  text-align:center;
+}
+
+footer strong {
+  color:var(--gold);
+}
+
+footer p {
+  color:#C7CDDA;
+  font-size:12px;
+  line-height:1.8;
+  margin-top:8px;
+}
+
+.bottom-nav {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:white;
+  border-top:1px solid var(--border);
+  display:flex;
+  justify-content:space-around;
+  padding:10px 4px calc(10px + env(safe-area-inset-bottom));
+  z-index:30;
+}
+
+.bottom-nav button {
+  background:transparent;
+  color:var(--muted);
+  font-size:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
+}
+
+.bottom-nav span {
+  font-size:20px;
+}
+
+.bottom-nav button.active {
+  color:var(--blue);
+  font-weight:bold;
+}
+
+.toast {
+  position:fixed;
+  bottom:90px;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--dark);
+  color:white;
+  padding:13px 18px;
+  border-radius:12px;
+  font-size:13px;
+  z-index:100;
+  display:none;
+  width:max-content;
+  max-width:90%;
+  text-align:center;
+}
+
+.hidden {
+  display:none !important;
+}
+
+@media(min-width:700px) {
+  .grid {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+  main {
+    padding:28px;
+  }
+  .hero {
+    padding:55px;
+  }
+}
+
+@media(max-width:380px) {
+  .brand strong {
+    font-size:13px;
+  }
+  .install-btn {
+    padding:9px;
+    font-size:10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+    <div class="brand">
+      <img src="./icon.svg" alt="Logo Éclat d'Afrique">
+      <div>
+        <strong>ÉCLAT D'AFRIQUE</strong>
+        <small>PRESSING · BAFOUSSAM</small>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button class="install-btn" id="installBtn" onclick="installApp()">
+        ⬇ Installer
+      </button>
+      <button class="icon-btn" onclick="showPage('cart')">
+        🛒 <span id="cartCount">0</span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+<!-- ACCUEIL -->
+
+<section id="homePage">
+
+  <div class="hero">
+    <div class="hero-content">
+
+      <span class="badge">LA QUALITÉ AVANT TOUT</span>
+
+      <h1>
+        Vos vêtements méritent
+        <span>un nouvel éclat.</span>
+      </h1>
+
+      <p>
+        Pressing, entretien du linge et nettoyage de surfaces.
+        Nous prenons soin de vos textiles avec attention.
+      </p>
+
+      <button class="btn btn-gold" onclick="showPage('services')">
+        Découvrir nos services →
+      </button>
+
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <h2>Nos services</h2>
+        <p>Des solutions pour vos textiles.</p>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="service-icon">👔</div>
+        <h3>Pressing classique</h3>
+        <p>Nettoyage et entretien de vos vêtements.</p>
+        <div class="price">À partir de 300 FCFA</div>
+        <button onclick="addToCart('Pressing classique',300)">
+          Commander
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="service-icon">🖤</div>
+        <h3>Ravivage noir</h3>
+        <p>Un soin adapté pour vos vêtements noirs.</p>
+        <div class="price">À partir de 200 FCFA</div>
+        <button onclick="addToCart('Ravivage noir',200)">
+          Commander
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="service-icon">🛏️</div>
+        <h3>Nettoyage matelas</h3>
+        <p>Nettoyage en profondeur de votre matelas.</p>
+        <div class="price">Sur devis</div>
+        <button onclick="requestQuote('Nettoyage matelas')">
+          Demander un devis
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="service-icon">🛋️</div>
+        <h3>Nettoyage canapé</h3>
+        <p>Entretien de vos canapés à domicile.</p>
+        <div class="price">Sur devis</div>
+        <button onclick="requestQuote('Nettoyage canapé')">
+          Demander un devis
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="service-icon">🧺</div>
+        <h3>Draps et linge blanc</h3>
+        <p>Entretien de votre linge de maison.</p>
+        <div class="price">Sur devis</div>
+        <button onclick="requestQuote('Draps et linge blanc')">
+          Demander un devis
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="service-icon">🏨</div>
+        <h3>Offres professionnelles</h3>
+        <p>Solutions pour hôtels et établissements.</p>
+        <div class="price">Tarif partenaire</div>
+        <button onclick="showPage('business')">
+          Demander une offre
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="info-banner">
+    <h3>📍 Retrouvez-nous à Bafoussam</h3>
+    <p>
+      Éclat d'Afrique Pressing, près du Stade Municipal
+      de Bafoussam. Contactez-nous pour vos commandes
+      et demandes de renseignements.
+    </p>
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="servicesPage" class="hidden">
+
+  <div class="section-heading">
+    <div>
+      <h2>Nos prestations</h2>
+      <p>Sélectionnez une prestation pour commander.</p>
+    </div>
+  </div>
+
+  <div class="grid" id="serviceGrid"></div>
+
+</section>
+
+<!-- PANIER -->
+
+<section id="cartPage" class="hidden">
+
+  <div class="section-heading">
+    <div>
+      <h2>Votre panier</h2>
+      <p>Vérifiez votre commande avant l'envoi.</p>
+    </div>
+  </div>
+
+  <div class="panel">
+
+    <div id="cartList" class="cart-list">
+      Votre panier est vide.
+    </div>
+
+    <div class="total">
+      <span>Total estimé</span>
+      <span id="cartTotal">0 FCFA</span>
+    </div>
+
+    <div class="field">
+      <label>Votre nom</label>
+      <input id="customerName" placeholder="Votre nom complet">
+    </div>
+
+    <div class="field">
+      <label>Votre numéro WhatsApp</label>
+      <input id="customerPhone" type="tel" placeholder="Ex : 6XXXXXXXX">
+    </div>
+
+    <div class="field">
+      <label>Votre quartier</label>
+      <input id="customerAddress" placeholder="Ex : Djeleng">
+    </div>
+
+    <div class="field">
+      <label>Informations supplémentaires</label>
+      <textarea id="customerNote" placeholder="Précisions sur votre commande..."></textarea>
+    </div>
+
+    <button class="btn btn-blue full" onclick="checkout()">
+      Envoyer ma commande sur WhatsApp
+    </button>
+
+  </div>
+
+</section>
+
+<!-- DEVIS -->
+
+<section id="quotePage" class="hidden">
+
+  <div class="section-heading">
+    <div>
+      <h2>Demander un devis</h2>
+      <p>Pour un nettoyage à domicile.</p>
+    </div>
+  </div>
+
+  <div class="panel">
+
+    <div class="field">
+      <label>Prestation</label>
+      <select id="quoteService">
+        <option>Nettoyage matelas</option>
+        <option>Nettoyage canapé</option>
+        <option>Nettoyage tapis</option>
+        <option>Autre prestation</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Votre nom</label>
+      <input id="quoteName" placeholder="Nom complet">
+    </div>
+
+    <div class="field">
+      <label>Téléphone</label>
+      <input id="quotePhone" type="tel" placeholder="Votre numéro">
+    </div>
+
+    <div class="field">
+      <label>Quartier</label>
+      <input id="quoteAddress" placeholder="Votre quartier">
+    </div>
+
+    <div class="field">
+      <label>Description du besoin</label>
+      <textarea id="quoteDescription" placeholder="Dimensions, quantité, état du textile..."></textarea>
+    </div>
+
+    <button class="btn btn-blue full" onclick="sendQuote()">
+      Envoyer ma demande
+    </button>
+
+  </div>
+
+</section>
+
+<!-- PROFESSIONNELS -->
+
+<section id="businessPage" class="hidden">
+
+  <div class="section-heading">
+    <div>
+      <h2>Espace professionnel</h2>
+      <p>Hôtels, restaurants et entreprises.</p>
+    </div>
+  </div>
+
+  <div class="panel">
+
+    <div class="field">
+      <label>Nom de l'établissement</label>
+      <input id="businessName" placeholder="Nom de votre établissement">
+    </div>
+
+    <div class="field">
+      <label>Votre nom</label>
+      <input id="businessContact" placeholder="Nom du responsable">
+    </div>
+
+    <div class="field">
+      <label>Téléphone</label>
+      <input id="businessPhone" type="tel" placeholder="Votre numéro">
+    </div>
+
+    <div class="field">
+      <label>Type d'établissement</label>
+      <select id="businessType">
+        <option>Hôtel</option>
+        <option>Restaurant</option>
+        <option>Résidence meublée</option>
+        <option>Entreprise</option>
+        <option>Autre</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Votre besoin</label>
+      <textarea id="businessNeed" placeholder="Quantité de linge, fréquence, services souhaités..."></textarea>
+    </div>
+
+    <button class="btn btn-blue full" onclick="sendBusiness()">
+      Envoyer ma demande professionnelle
+    </button>
+
+  </div>
+
+</section>
+
+<!-- ADMINISTRATION -->
+
+<section id="adminPage" class="hidden">
+
+  <div class="section-heading">
+    <div>
+      <h2>Administration</h2>
+      <p>Gestion locale de vos commandes.</p>
+    </div>
+  </div>
+
+  <div class="panel">
+
+    <div id="adminLogin">
+
+      <div class="field">
+        <label>Code PIN administrateur</label>
+        <input id="adminPin" type="password" inputmode="numeric" placeholder="Code PIN">
+      </div>
+
+      <button class="btn btn-blue full" onclick="loginAdmin()">
+        Accéder à l'administration
+      </button>
+
+    </div>
+
+    <div id="adminDashboard" class="admin-box">
+
+      <h3>Tableau de bord</h3>
+      <br>
+
+      <div class="info-banner">
+        <h3 id="orderCount">0 commande</h3>
+        <p>Commandes enregistrées sur cet appareil.</p>
+      </div>
+
+      <br>
+
+      <button class="btn btn-outline full" onclick="exportOrders()">
+        Exporter les commandes
+      </button>
+
+      <br><br>
+
+      <button class="btn btn-outline full" onclick="clearOrders()">
+        Effacer l'historique local
+      </button>
+
+      <br><br>
+
+      <button class="btn btn-blue full" onclick="logoutAdmin()">
+        Fermer la session
+      </button>
+
+      <br><br>
+
+      <h3>Historique</h3>
+
+      <div id="adminOrders"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  <strong>ÉCLAT D'AFRIQUE PRESSING</strong>
+  <p>
+    La qualité avant tout.<br>
+    Près du Stade Municipal de Bafoussam.<br>
+    Pressing · Entretien du linge · Nettoyage à domicile
+  </p>
+  <p>© <span id="year"></span> Éclat d'Afrique. Tous droits réservés.</p>
+</footer>
+
+<nav class="bottom-nav">
+
+  <button class="active" onclick="showPage('home')">
+    <span>🏠</span>Accueil
+  </button>
+
+  <button onclick="showPage('services')">
+    <span>🧺</span>Services
+  </button>
+
+  <button onclick="showPage('cart')">
+    <span>🛒</span>Panier
+  </button>
+
+  <button onclick="showPage('quote')">
+    <span>📋</span>Devis
+  </button>
+
+  <button onclick="showPage('admin')">
+    <span>⚙️</span>Admin
+  </button>
+
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* CONFIGURATION */
+
+const WHATSAPP_NUMBER = "237XXXXXXXXX";
+const ADMIN_PIN = "1234";
+
+/*
+  IMPORTANT :
+  Remplace 237XXXXXXXXX par ton vrai numéro WhatsApp.
+  Change également le code PIN administrateur.
+*/
+
+/* DONNÉES */
+
+const services = [
+  {name:"Pressing classique",price:300,icon:"👔",description:"Nettoyage de vêtements."},
+  {name:"Ravivage noir",price:200,icon:"🖤",description:"Soin des vêtements noirs."},
+  {name:"Draps et linge blanc",price:700,icon:"🛏️",description:"Entretien du linge de maison."},
+  {name:"Nettoyage matelas",price:0,icon:"🛌",description:"Nettoyage à domicile sur devis."},
+  {name:"Nettoyage canapé",price:0,icon:"🛋️",description:"Entretien de canapés sur devis."},
+  {name:"Nettoyage tapis",price:0,icon:"🧹",description:"Entretien de tapis sur devis."}
+];
+
+let cart = [];
+let deferredPrompt = null;
+
+/* OUTILS */
+
+function money(value) {
+  return Number(value).toLocaleString("fr-FR") + " FCFA";
+}
+
+function notify(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.style.display = "block";
+
+  setTimeout(() => {
+    toast.style.display = "none";
+  }, 2800);
+}
+
+function openWhatsApp(message) {
+  if (!/^\d{10,15}$/.test(WHATSAPP_NUMBER)) {
+    notify("Configure d'abord ton numéro WhatsApp dans le code.");
+    return;
+  }
+
+  const url =
+    "https://wa.me/" +
+    WHATSAPP_NUMBER +
+    "?text=" +
+    encodeURIComponent(message);
+
+  window.open(url,"_blank");
+}
+
+/* NAVIGATION */
+
+const pages = [
+  "home",
+  "services",
+  "cart",
+  "quote",
+  "business",
+  "admin"
+];
+
+function showPage(page) {
+  pages.forEach(name => {
+    const element = document.getElementById(name + "Page");
+    if (element) {
+      element.classList.toggle("hidden", name !== page);
+    }
+  });
+
+  document.querySelectorAll(".bottom-nav button").forEach(button => {
+    button.classList.remove("active");
+  });
+
+  const navButtons = document.querySelectorAll(".bottom-nav button");
+  const index = {
+    home:0,
+    services:1,
+    cart:2,
+    quote:3,
+    admin:4
+  }[page];
+
+  if (index !== undefined && navButtons[index]) {
+    navButtons[index].classList.add("active");
+  }
+
+  if (page === "cart") renderCart();
+  if (page === "admin") renderAdmin();
+
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+/* SERVICES */
+
+function renderServices() {
+  const grid = document.getElementById("serviceGrid");
+
+  grid.innerHTML = services.map((service,index) => `
+    <div class="card">
+      <div class="service-icon">${service.icon}</div>
+      <h3>${service.name}</h3>
+      <p>${service.description}</p>
+      <div class="price">
+        ${service.price ? money(service.price) : "Sur devis"}
+      </div>
+      <button onclick="selectService(${index})">
+        ${service.price ? "Ajouter au panier" : "Demander un devis"}
+      </button>
+    </div>
+  `).join("");
+}
+
+function selectService(index) {
+  const service = services[index];
+
+  if (service.price === 0) {
+    requestQuote(service.name);
+  } else {
+    addToCart(service.name,service.price);
+  }
+}
+
+function requestQuote(service) {
+  document.getElementById("quoteService").value = service;
+  showPage("quote");
+}
+
+/* PANIER */
+
+function addToCart(name,price) {
+  const existing = cart.find(item => item.name === name);
+
+  if (existing) {
+    existing.quantity++;
+  } else {
+    cart.push({name,price,quantity:1});
+  }
+
+  saveCart();
+  updateCartCount();
+  notify(name + " ajouté au panier.");
+}
+
+function removeFromCart(index) {
+  cart.splice(index,1);
+  saveCart();
+  renderCart();
+  updateCartCount();
+}
+
+function saveCart() {
+  localStorage.setItem("eclat_cart",JSON.stringify(cart));
+}
+
+function loadCart() {
+  try {
+    cart = JSON.parse(localStorage.getItem("eclat_cart")) || [];
+  } catch(error) {
+    cart = [];
+  }
+
+  updateCartCount();
+}
+
+function updateCartCount() {
+  const count = cart.reduce((sum,item) => sum + item.quantity,0);
+  document.getElementById("cartCount").textContent = count;
+}
+
+function renderCart() {
+  const list = document.getElementById("cartList");
+  const totalElement = document.getElementById("cartTotal");
+
+  if (!cart.length) {
+    list.textContent = "Votre panier est vide.";
+    totalElement.textContent = money(0);
+    return;
+  }
+
+  list.innerHTML = cart.map((item,index) => `
+    <div class="cart-item">
+      <div>
+        <strong>${escapeHTML(item.name)}</strong><br>
+        ${item.quantity} × ${money(item.price)}
+      </div>
+      <button onclick="removeFromCart(${index})">Retirer</button>
+    </div>
+  `).join("");
+
+  const total = cart.reduce(
+    (sum,item) => sum + item.price * item.quantity,
+    0
+  );
+
+  totalElement.textContent = money(total);
+}
+
+/* COMMANDE */
+
+function checkout() {
+  if (!cart.length) {
+    notify("Votre panier est vide.");
+    return;
+  }
+
+  const name = document.getElementById("customerName").value.trim();
+  const phone = document.getElementById("customerPhone").value.trim();
+  const address = document.getElementById("customerAddress").value.trim();
+  const note = document.getElementById("customerNote").value.trim();
+
+  if (!name || !phone || !address) {
+    notify("Veuillez remplir les informations obligatoires.");
+    return;
+  }
+
+  const total = cart.reduce(
+    (sum,item) => sum + item.price * item.quantity,
+    0
+  );
+
+  const order = {
+    id:"ECL-" + Date.now(),
+    date:new Date().toLocaleString("fr-FR"),
+    name,
+    phone,
+    address,
+    note,
+    items:cart.map(item => ({...item})),
+    total,
+    status:"En attente"
+  };
+
+  const orders = getOrders();
+  orders.unshift(order);
+
+  localStorage.setItem("eclat_orders",JSON.stringify(orders));
+
+  let message =
+    "Bonjour Éclat d'Afrique Pressing !\n\n" +
+    "Je souhaite passer une commande.\n\n" +
+    "Nom : " + name + "\n" +
+    "Téléphone : " + phone + "\n" +
+    "Quartier : " + address + "\n\n" +
+    "COMMANDE :\n";
+
+  cart.forEach(item => {
+    message +=
+      "- " + item.name +
+      " x" + item.quantity +
+      " : " + money(item.price * item.quantity) + "\n";
+  });
+
+  message +=
+    "\nTotal estimé : " + money(total) +
+    "\nRéférence : " + order.id;
+
+  if (note) {
+    message += "\nInformations : " + note;
+  }
+
+  cart = [];
+  saveCart();
+  updateCartCount();
+  renderCart();
+
+  openWhatsApp(message);
+}
+
+/* DEVIS */
+
+function sendQuote() {
+  const service = document.getElementById("quoteService").value;
+  const name = document.getElementById("quoteName").value.trim();
+  const phone = document.getElementById("quotePhone").value.trim();
+  const address = document.getElementById("quoteAddress").value.trim();
+  const description = document.getElementById("quoteDescription").value.trim();
+
+  if (!name || !phone || !address) {
+    notify("Remplissez les informations obligatoires.");
+    return;
+  }
+
+  const message =
+    "Bonjour Éclat d'Afrique Pressing.\n\n" +
+    "Je souhaite obtenir un devis.\n" +
+    "Prestation : " + service + "\n" +
+    "Nom : " + name + "\n" +
+    "Téléphone : " + phone + "\n" +
+    "Quartier : " + address + "\n" +
+    "Description : " + description;
+
+  openWhatsApp(message);
+}
+
+/* CLIENTS PROFESSIONNELS */
+
+function sendBusiness() {
+  const name = document.getElementById("businessName").value.trim();
+  const contact = document.getElementById("businessContact").value.trim();
+  const phone = document.getElementById("businessPhone").value.trim();
+  const type = document.getElementById("businessType").value;
+  const need = document.getElementById("businessNeed").value.trim();
+
+  if (!name || !contact || !phone) {
+    notify("Veuillez remplir les informations obligatoires.");
+    return;
+  }
+
+  const message =
+    "DEMANDE DE PARTENARIAT PROFESSIONNEL\n\n" +
+    "Établissement : " + name + "\n" +
+    "Responsable : " + contact + "\n" +
+    "Téléphone : " + phone + "\n" +
+    "Type : " + type + "\n" +
+    "Besoin : " + need;
+
+  openWhatsApp(message);
+}
+
+/* ADMINISTRATION */
+
+function getOrders() {
+  try {
+    return JSON.parse(localStorage.getItem("eclat_orders")) || [];
+  } catch(error) {
+    return [];
+  }
+}
+
+function loginAdmin() {
+  const pin = document.getElementById("adminPin").value;
+
+  if (pin !== ADMIN_PIN) {
+    notify("Code PIN incorrect.");
+    return;
+  }
+
+  document.getElementById("adminLogin").style.display = "none";
+  document.getElementById("adminDashboard").style.display = "block";
+
+  renderAdmin();
+  notify("Bienvenue dans l'administration.");
+}
+
+function logoutAdmin() {
+  document.getElementById("adminLogin").style.display = "block";
+  document.getElementById("adminDashboard").style.display = "none";
+  document.getElementById("adminPin").value = "";
+}
+
+function renderAdmin() {
+  const orders = getOrders();
+
+  document.getElementById("orderCount").textContent =
+    orders.length + " commande(s)";
+
+  const container = document.getElementById("adminOrders");
+
+  if (!orders.length) {
+    container.innerHTML = "<p>Aucune commande enregistrée.</p>";
+    return;
+  }
+
+  container.innerHTML = orders.map(order => `
+    <div class="order-row">
+      <strong>${escapeHTML(order.id)}</strong><br>
+      Client : ${escapeHTML(order.name)}<br>
+      Téléphone : ${escapeHTML(order.phone)}<br>
+      Date : ${escapeHTML(order.date)}<br>
+      Total : ${money(order.total)}<br>
+      Statut : ${escapeHTML(order.status)}
+    </div>
+  `).join("");
+}
+
+function exportOrders() {
+  const orders = getOrders();
+
+  if (!orders.length) {
+    notify("Aucune commande à exporter.");
+    return;
+  }
+
+  const blob = new Blob(
+    [JSON.stringify(orders,null,2)],
+    {type:"application/json"}
+  );
+
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+
+  link.href = url;
+  link.download = "commandes-eclat.json";
+  link.click();
+
+  URL.revokeObjectURL(url);
+}
+
+function clearOrders() {
+  if (!confirm("Effacer toutes les commandes enregistrées sur cet appareil ?")) {
+    return;
+  }
+
+  localStorage.removeItem("eclat_orders");
+  renderAdmin();
+  notify("Historique local effacé.");
+}
+
+/* PROTECTION AFFICHAGE */
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g,char => ({
+    "&":"&amp;",
+    "<":"&lt;",
+    ">":"&gt;",
+    '"':"&quot;",
+    "'":"&#039;"
+  })[char]);
+}
+
+/* INSTALLATION PWA */
+
+window.addEventListener("beforeinstallprompt",event => {
+  event.preventDefault();
+
+  deferredPrompt = event;
+
+  document.getElementById("installBtn").style.display = "block";
+});
+
+async function installApp() {
+  if (!deferredPrompt) {
+    notify("Ouvre le menu de Chrome puis choisis Installer l'application.");
+    return;
+  }
+
+  deferredPrompt.prompt();
+
+  const result = await deferredPrompt.userChoice;
+
+  if (result.outcome === "accepted") {
+    notify("Installation acceptée.");
+  } else {
+    notify("Installation annulée.");
+  }
+
+  deferredPrompt = null;
+  document.getElementById("installBtn").style.display = "none";
+}
+
+window.addEventListener("appinstalled",() => {
+  document.getElementById("installBtn").style.display = "none";
+  deferredPrompt = null;
+  notify("Éclat d'Afrique est installé !");
+});
+
+/* SERVICE WORKER */
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load",() => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("Service Worker activé"))
+      .catch(error => console.error("Erreur PWA :",error));
+  });
+}
+
+/* INITIALISATION */
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+renderServices();
+loadCart();
+renderCart();
+</script>
+
+</body>
+  </html>
